@@ -1,0 +1,50 @@
+create table lessor (
+lessor_id	varchar2(20),
+pw		varchar2(20),
+name		varchar2(20),
+idcard_num	char(14),
+address		varchar2(100),
+tel		varchar2(14),
+email		varchar2(40),
+constraint lessor_PK primary key(lessor_id));
+
+insert into lessor values ('llll0001', '1234qwer', '김이름', '990109-1254621', 
+			'경기도 이천시 장호원읍 장감로 80', '010-1564-6551', 'llll0001@never.com');
+insert into lessor values ('llll0002', '1234qwer', '이루다', '960208-2289509', 
+			'충청북도 충주시 중앙탑면 기업도시로 222', '010-1844-6306', 'llll0002@never.com');
+insert into lessor values ('llll0003', '1234qwer', '백과장', '920307-1215559', 
+			'경기도 여주시 명품1로 22-5 ', '010-1277-5112', 'llll0003@never.com');
+insert into lessor values ('llll0004', '1234qwer', '김금화', '970406-1154159', 
+			'경기도 여주시 가남읍 태평중앙1길 2', '010-8834-6530', 'llll0004@never.com');
+insert into lessor values ('llll0005', '1234qwer', '이은화', '980505-2675119', 
+			'경기도 여주시 세종로 21', '010-1934-5085', 'llll0005@never.com');
+insert into lessor values ('llll0006', '1234qwer', '송동화', '910604-2652217', 
+			'강원도 원주시 문막읍 원문로 1587', '010-9514-2884', 'llll0006@never.com');
+insert into lessor values ('llll0007', '1234qwer', '조물주', '950703-1784114', 
+			'경상남도 합천군 합천읍 동서로 85 ', '010-9987-7560', 'llll0007@never.com');
+insert into lessor values ('llll0008', '1234qwer', '김인지', '950802-1144525', 
+			'경상남도 진주시 대신로 474', '010-0159-6548', 'llll0008@never.com');
+insert into lessor values ('llll0009', '1234qwer', '신학습', '930901-2484555', 
+			'경상남도 진주시 남강로 707', '010-0846-3351', 'llll0009@never.com');
+insert into lessor values ('llll0010', '1234qwer', '소공모', '961030-2623311', 
+			'경상북도 포항시 북구 중흥로 187', '010-1984-0111', 'llll0010@never.com');
+insert into lessor values ('llll0011', '1234qwer', '최집중', '971129-2484453', 
+			'경상북도 포항시 북구 중앙로 282', '010-1843-5589', 'llll0011@never.com');
+insert into lessor values ('llll0012', '1234qwer', '강진심', '981228-1230483', 
+			'울산광역시 남구 문수로 339', '010-9812-5889', 'llll0012@never.com');
+insert into lessor values ('llll0013', '1234qwer', '이자기', '980227-1963322', 
+			'경상북도 경산시 하양읍 하양로 126', '010-8124-0900', 'llll0013@never.com');
+insert into lessor values ('llll0014', '1234qwer', '신진성', '990526-1488552', 
+			'울산광역시 남구 대학로84번길 7-1', '010-7745-0189', 'llll0014@never.com');
+insert into lessor values ('llll0015', '1234qwer', '최사랑', '990625-1625545', 
+			'울산광역시 동구 진성14길 77', '010-9114-6519', 'llll0015@never.com');
+insert into lessor values ('llll0016', '1234qwer', '이감정', '940424-2995844', 
+			'강원도 철원군 서면 와수로 186', '010-8894-9589', 'llll0016@never.com');
+insert into lessor values ('llll0017', '1234qwer', '조행복', '970823-2644528', 
+			'강원도 화천군 화천읍 중앙로 16', '010-8514-1189', 'llll0017@never.com');
+insert into lessor values ('llll0018', '1234qwer', '나사랑', '970122-2633257', 
+			'경기도 포천시 영북면 운천안길 26', '010-6654-1566', 'llll0018@never.com');
+insert into lessor values ('llll0019', '1234qwer', '신자리', '990921-2884525', 
+			'강원도 속초시 중앙로 124', '010-1124-5985', 'llll0019@never.com');
+insert into lessor values ('llll0020', '1234qwer', '고동색', '990620-1654825', 
+			'경기도 동두천시 중앙로 270', '010-3214-5811', 'llll0020@never.com');

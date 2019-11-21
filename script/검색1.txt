@@ -1,0 +1,19 @@
+UPDATE startup_class
+   SET rate = &rate
+   WHERE STARTUP_ID = '&startup_id'
+and pro_id = &pro_id;
+-----
+UPDATE PROGRAM a
+SET RATE =
+	( select cast(avg(b.rate) as float(8))
+	from startup_class b
+	where b.pro_id = a.pro_id) 
+
+WHERE pro_id in
+	( select distinct pro_id 
+	from program);
+
+select pro_id, rate
+from program
+
+select * from startup_class

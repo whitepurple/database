@@ -1,0 +1,23 @@
+--갱신 
+
+--후원정보 - 현재금액(투자하다(투자수량)*상품(가격)), 참여인원(투자하다)
+
+update sponsor_info s
+set current_amount = --다시
+		(select sum( 
+			select sum(p.price*i.invest_num)
+			from invest i, product p, sponsor_info ss
+			where i.prod_id = p.prod_id
+			and p.spon_id = ss.spon_id )
+		from s
+		where s.spon_id = ss.spon_id),
+
+	join_num = --됨
+		( select count(distinct i.indi_id)
+		from product p, startup_mem m, invest i
+		where	s.startup_id = m.startup_id
+		and p.spon_id = s.spon_id
+		and i.prod_id = p.prod_id
+		)
+where spon_id in (select distinct spon_id 
+		from sponsor_info);

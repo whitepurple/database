@@ -1,0 +1,31 @@
+create table teacher (
+t_id 	char(4),
+name 	varchar2(20),
+tel 	varchar2(14),
+email 	varchar2(40),
+constraint teacher_PK primary key(t_id));
+
+commit;
+
+INSERT INTO TEACHER VALUES ('T001', 'ÀÓÁöÀº', '010-8383-6138', 'b816@koreateh.ac.kr');
+INSERT INTO TEACHER VALUES ('T002', '±èÀçÈÆ', '010-3047-9984', 'b0325@koreateh.ac.kr');
+INSERT INTO TEACHER VALUES ('T003', '±¸Á¤ÈÆ', '010-3054-9429', 'b127@koreateh.ac.kr');
+INSERT INTO TEACHER VALUES ('T004', '¼ÒÇü¼·', '010-6726-7704', 'b74@koreateh.ac.kr');
+INSERT INTO TEACHER VALUES ('T005', 'Ãß±³À±', '010-5037-0266', 'b91@koreateh.ac.kr');
+INSERT INTO TEACHER VALUES ('T006', 'ÀÌ¼öÁø', '010-3047-9984', 'b0921@koreateh.ac.kr');
+INSERT INTO TEACHER VALUES ('T007', '±è¿ä¼Á', '010-8283-6745', 'b0909@koreateh.ac.kr');
+INSERT INTO TEACHER VALUES ('T008', '±èÇÏ°æ', '010-6560-3585', 'b615@koreateh.ac.kr');
+INSERT INTO TEACHER VALUES ('T009', '±è¾Æ¿µ', '010-9510-1876', 'b218@koreateh.ac.kr');
+INSERT INTO TEACHER VALUES ('T010', 'ÀÌº´°Ç', '010-6775-7748', 'b323@koreateh.ac.kr');
+INSERT INTO TEACHER VALUES ('T011', 'ÀÌ¼ö°æ', '010-5809-9369', 'b801@koreateh.ac.kr');
+INSERT INTO TEACHER VALUES ('T012', '¾çÃ¤À±', '010-9224-2570', 'b313@koreateh.ac.kr');
+INSERT INTO TEACHER VALUES ('T013', '¿À¼öÈ¯', '010-4554-6483', 'b512@koreateh.ac.kr');
+INSERT INTO TEACHER VALUES ('T014', '¼Û½ÂÇå', '010-7519-8478', 'b507@koreateh.ac.kr');
+INSERT INTO TEACHER VALUES ('T015', '¹è¼öºó', '010-3996-1319', 'b326@koreateh.ac.kr');
+INSERT INTO TEACHER VALUES ('T016', 'ÀÌÈ£¹Î', '010-3360-8490', 'b629@koreateh.ac.kr');
+INSERT INTO TEACHER VALUES ('T017', '±Ç¿µ¼­', '010-7647-5528', 'b1018@koreateh.ac.kr');
+INSERT INTO TEACHER VALUES ('T018', '±è¹ü¿µ', '010-3720-4068', 'b222@koreateh.ac.kr');
+INSERT INTO TEACHER VALUES ('T019', 'Á¤ÁÖºó', '010-5671-4587', 'b914@koreateh.ac.kr');
+INSERT INTO TEACHER VALUES ('T020', '¹ÚÁö¼ö', '010-5532-9063', 'b712@koreateh.ac.kr');
+INSERT INTO TEACHER VALUES ('T021', 'ÀÌÁö¿µ', '010-2358-9534', 'b309@koreateh.ac.kr');
+INSERT INTO TEACHER VALUES ('T022', 'Á¶¼º¿õ', '010-4126-5266', 'b1202@koreateh.ac.kr');

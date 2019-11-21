@@ -1,0 +1,64 @@
+create table sponsor_info (
+spon_id 		char(10),
+deadline 		date,
+upload_date		date default sysdate,
+min_amount		number(10),
+delivery_date		date,
+current_amount		number(10) default '0',
+join_num		number(5) default '0',
+startup_id 		varchar2(20) not null,
+constraint sponsor_info_PK primary key(spon_id),
+constraint startup_id_FK foreign key(startup_id)
+		references startup_mem(startup_id));
+
+commit;
+
+insert into sponsor_info values ('190501S001', TO_DATE('06/01/2019','MM/DD/YYYY'), 
+	TO_DATE ('05/01/2019','MM/DD/YYYY'), '500000', TO_DATE('06/10/2019','MM/DD/YYYY'), default, default, 'ssss0001');
+insert into sponsor_info values ('190502S001', TO_DATE('06/01/2019','MM/DD/YYYY'), 
+	TO_DATE ('05/02/2019','MM/DD/YYYY'), '700000', TO_DATE('06/10/2019','MM/DD/YYYY'), default, default, 'ssss0001');
+insert into sponsor_info values ('190503S001', TO_DATE('06/01/2019','MM/DD/YYYY'), 
+	TO_DATE ('05/03/2019','MM/DD/YYYY'), '100000', TO_DATE('06/10/2019','MM/DD/YYYY'), default, default, 'ssss0002');
+insert into sponsor_info values ('190504S001', TO_DATE('06/01/2019','MM/DD/YYYY'), 
+	TO_DATE ('05/04/2019','MM/DD/YYYY'), '200000', TO_DATE('06/10/2019','MM/DD/YYYY'), default, default, 'ssss0001');
+insert into sponsor_info values ('190505S001', TO_DATE('06/01/2019','MM/DD/YYYY'), 
+	TO_DATE ('05/05/2019','MM/DD/YYYY'), '300000', TO_DATE('06/10/2019','MM/DD/YYYY'), default, default, 'ssss0002');
+insert into sponsor_info values ('190506S001', TO_DATE('06/01/2019','MM/DD/YYYY'), 
+	TO_DATE ('05/06/2019','MM/DD/YYYY'), '400000', TO_DATE('06/10/2019','MM/DD/YYYY'), default, default, 'ssss0003');
+insert into sponsor_info values ('190507S001', TO_DATE('06/01/2019','MM/DD/YYYY'), 
+	TO_DATE ('05/07/2019','MM/DD/YYYY'), '500000', TO_DATE('06/10/2019','MM/DD/YYYY'), default, default, 'ssss0004');
+insert into sponsor_info values ('190508S001', TO_DATE('06/01/2019','MM/DD/YYYY'), 
+	TO_DATE ('05/08/2019','MM/DD/YYYY'), '600000', TO_DATE('06/10/2019','MM/DD/YYYY'), default, default, 'ssss0005');
+insert into sponsor_info values ('190509S001', TO_DATE('06/01/2019','MM/DD/YYYY'), 
+	TO_DATE ('05/09/2019','MM/DD/YYYY'), '700000', TO_DATE('06/10/2019','MM/DD/YYYY'), default, default, 'ssss0006');
+insert into sponsor_info values ('190510S001', TO_DATE('06/01/2019','MM/DD/YYYY'), 
+	TO_DATE ('05/10/2019','MM/DD/YYYY'), '800000', TO_DATE('06/10/2019','MM/DD/YYYY'), default, default, 'ssss0007');
+insert into sponsor_info values ('190511S001', TO_DATE('07/01/2019','MM/DD/YYYY'), 
+	TO_DATE ('05/11/2019','MM/DD/YYYY'), '900000', TO_DATE('07/10/2019','MM/DD/YYYY'), default, default, 'ssss0008');
+insert into sponsor_info values ('190512S001', TO_DATE('07/01/2019','MM/DD/YYYY'), 
+	TO_DATE ('05/12/2019','MM/DD/YYYY'), '510000', TO_DATE('07/10/2019','MM/DD/YYYY'), default, default, 'ssss0009');
+insert into sponsor_info values ('190513S001', TO_DATE('07/01/2019','MM/DD/YYYY'), 
+	TO_DATE ('05/13/2019','MM/DD/YYYY'), '560000', TO_DATE('07/10/2019','MM/DD/YYYY'), default, default, 'ssss0010');
+insert into sponsor_info values ('190514S001', TO_DATE('07/01/2019','MM/DD/YYYY'), 
+	TO_DATE ('05/14/2019','MM/DD/YYYY'), '480000', TO_DATE('07/10/2019','MM/DD/YYYY'), default, default, 'ssss0011');
+insert into sponsor_info values ('190515S001', TO_DATE('07/01/2019','MM/DD/YYYY'), 
+	TO_DATE ('05/15/2019','MM/DD/YYYY'), '150000', TO_DATE('07/10/2019','MM/DD/YYYY'), default, default, 'ssss0012');
+insert into sponsor_info values ('190516S001', TO_DATE('07/01/2019','MM/DD/YYYY'), 
+	TO_DATE ('05/16/2019','MM/DD/YYYY'), '920000', TO_DATE('07/10/2019','MM/DD/YYYY'), default, default, 'ssss0013');
+insert into sponsor_info values ('190517S001', TO_DATE('07/01/2019','MM/DD/YYYY'), 
+	TO_DATE ('05/17/2019','MM/DD/YYYY'), '480000', TO_DATE('07/10/2019','MM/DD/YYYY'), default, default, 'ssss0014');
+insert into sponsor_info values ('190518S001', TO_DATE('07/01/2019','MM/DD/YYYY'), 
+	TO_DATE ('05/18/2019','MM/DD/YYYY'), '350000', TO_DATE('07/10/2019','MM/DD/YYYY'), default, default, 'ssss0015');
+insert into sponsor_info values ('190519S001', TO_DATE('07/01/2019','MM/DD/YYYY'), 
+	TO_DATE ('05/19/2019','MM/DD/YYYY'), '950000', TO_DATE('07/10/2019','MM/DD/YYYY'), default, default, 'ssss0016');
+insert into sponsor_info values ('190520S001', TO_DATE('07/01/2019','MM/DD/YYYY'), 
+	TO_DATE ('05/20/2019','MM/DD/YYYY'), '840000', TO_DATE('07/10/2019','MM/DD/YYYY'), default, default, 'ssss0017');
+insert into sponsor_info values ('190521S001', TO_DATE('07/01/2019','MM/DD/YYYY'), 
+	TO_DATE ('05/21/2019','MM/DD/YYYY'), '650000', TO_DATE('07/10/2019','MM/DD/YYYY'), default, default, 'ssss0018');
+insert into sponsor_info values ('190522S001', TO_DATE('07/01/2019','MM/DD/YYYY'), 
+	TO_DATE ('05/22/2019','MM/DD/YYYY'), '880000', TO_DATE('07/10/2019','MM/DD/YYYY'), default, default, 'ssss0019');
+insert into sponsor_info values ('190523S001', TO_DATE('07/01/2019','MM/DD/YYYY'), 
+	TO_DATE ('05/23/2019','MM/DD/YYYY'), '920000', TO_DATE('07/10/2019','MM/DD/YYYY'), default, default, 'ssss0020');
+
+
+commit;

@@ -1,0 +1,50 @@
+create table individual_mem (
+indi_id		varchar2(20),
+pw		varchar2(20),
+name		varchar2(20),
+idcard_num	char(14),
+address		varchar2(100),
+tel		varchar2(14),
+email		varchar2(40),
+constraint individual_mem_PK primary key(indi_id));
+
+insert into individual_mem values('iiii0001', '1234qwer', '김길동', '940101-1054567', 
+	'경기도 성남시 분당구 불정로 379', '010-1234-7278', 'iiii0001@never.com');
+insert into individual_mem values('iiii0002', '1234qwer', '이평화', '950201-1275567', 
+	'경기도 성남시 분당구 야탑로81번길 11', '010-2341-2578', 'iiii0002@never.com');
+insert into individual_mem values('iiii0003', '1234qwer', '서사랑', '910301-2245267', 
+	'경기도 오산시 경기대로 651', '010-4234-5578', 'iiii0003@never.com');
+insert into individual_mem values('iiii0004', '1234qwer', '강한국', '900501-2235267', 
+	'경기도 화성시 효행로 1260', '010-1254-5778', 'iiii0004@never.com');
+insert into individual_mem values('iiii0005', '1234qwer', '최철하', '980501-2231267', 
+	'경기도 용인시 처인구 중부대로 1166', '010-1534-5788', 'iiii0005@never.com');
+insert into individual_mem values('iiii0006', '1234qwer', '신유진', '970501-1222567', 
+	'경기도 오산시 경기대로 170', '010-7534-5678', 'iiii0006@never.com');
+insert into individual_mem values('iiii0007', '1234qwer', '성제하', '940801-1235237', 
+	'경기도 의왕시 경수대로 351', '010-2753-6728', 'iiii0007@never.com');
+insert into individual_mem values('iiii0008', '1234qwer', '사철현', '940701-2234985', 
+	'충청북도 청주시 흥덕구 2순환로 1076', '010-4424-3778', 'iiii0008@never.com');
+insert into individual_mem values('iiii0009', '1234qwer', '박진성', '940901-1234993', 
+	'대전광역시 유성구 계룡로87번길 3 맥도날드', '010-1244-7868', 'iiii0009@never.com');
+insert into individual_mem values('iiii0010', '1234qwer', '이다정', '930501-2238527', 
+	'대전광역시 유성구 도안북로 81', '010-1974-3578', 'iiii0010@never.com');
+insert into individual_mem values('iiii0011', '1234qwer', '송진우', '920601-2252377', 
+	'전라북도 전주시 완산구 모악로 4758', '010-7234-7978', 'iiii0011@never.com');
+insert into individual_mem values('iiii0012', '1234qwer', '김시현', '990401-1275557', 
+	'경상남도 진주시 진양호로 280', '010-6734-5638', 'iiii0012@never.com');
+insert into individual_mem values('iiii0013', '1234qwer', '김지훈', '981001-2217717', 
+	'전라북도 전주시 덕진구 백제대로 692', '010-2234-5623', 'iiii0013@never.com');
+insert into individual_mem values('iiii0014', '1234qwer', '김동진', '981101-1735257', 
+	'대전광역시 서구 계백로 1124', '010-6654-5233', 'iiii0014@never.com');
+insert into individual_mem values('iiii0015', '1234qwer', '배진기', '981201-2275245', 
+	'대구광역시 수성구 수성로 238', '010-6724-5777', 'iiii0015@never.com');
+insert into individual_mem values('iiii0016', '1234qwer', '박주동', '970101-1242525', 
+	'경상북도 구미시 옥계2공단로 390', '010-6534-5611', 'iiii0016@never.com');
+insert into individual_mem values('iiii0017', '1234qwer', '송제림', '990501-1234250', 
+	'대전광역시 서구 도산로 324', '010-1954-5651', 'iiii0017@never.com');
+insert into individual_mem values('iiii0018', '1234qwer', '김이름', '950701-2452275', 
+	'대구광역시 달서구 와룡로 134', '010-1223-5652', 'iiii0018@never.com');
+insert into individual_mem values('iiii0019', '1234qwer', '이이름', '950601-1234562', 
+	'부산광역시 기장군 기장읍 기장대로 500', '010-1298-2228', 'iiii0019@never.com');
+insert into individual_mem values('iiii0020', '1234qwer', '박이름', '930301-1245324', 
+	'부산광역시 동래구 충렬대로 486', '010-1564-5229', 'iiii0020@never.com');

@@ -1,0 +1,9 @@
+create table individual_class(
+indi_id 		varchar2(20),
+pro_id 		char(10),
+rate 		number(3) check(0.0<=rate or rate<=5.0),
+constraint individual_class_PK primary key(indi_id, pro_id),
+constraint ic_individual_id_FK foreign key(indi_id)
+	references individual_mem(indi_id),
+constraint ic_pro_id_FK foreign key(pro_id)
+	references program(pro_id));

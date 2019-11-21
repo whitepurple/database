@@ -1,0 +1,36 @@
+create table office(
+office_id 	char(4),
+purpose 	varchar2(10),
+use_num 	number(3),
+start_date 	date,
+end_date 	date,
+type 		varchar2(10),
+price 		number(8),
+location 	varchar2(100),
+doc_num 	char(16) unique,
+lessor_id 	varchar2(20) not null,
+constraint office_PK primary key(office_id),
+constraint o_lessor_id_FK foreign key(lessor_id) 
+	references lessor(lessor_id));
+
+
+INSERT INTO OFFICE VALUES ('O001', '회의', 13,  TO_DATE('03/11/2019','MM/DD/YYYY'), TO_DATE('03/24/2019', 'MM/DD/YYYY'), '독립형', 300000, '서울특별시 강남구 강남대로 438','1000-2000-345671');
+INSERT INTO OFFICE VALUES ('O002', '개발', 11,  TO_DATE('03/12/2019','MM/DD/YYYY'), TO_DATE('03/26/2019', 'MM/DD/YYYY'), '독립형', 600000, '서울특별시 강남구 도산대로 323 ','1000-2000-345672');
+INSERT INTO OFFICE VALUES ('O003', '계약', 13,  TO_DATE('03/18/2019','MM/DD/YYYY'), TO_DATE('03/28/2019', 'MM/DD/YYYY'), '개방형', 300000, '서울특별시 강남구 압구정로30길 45','1000-2000-345673');
+INSERT INTO OFFICE VALUES ('O004', '회의', 7,  TO_DATE('03/08/2019','MM/DD/YYYY'), TO_DATE('03/10/2019', 'MM/DD/YYYY'), '독립형', 100000, '인천광역시 계양구 장제로 738', '1000-2000-345674');
+INSERT INTO OFFICE VALUES ('O005', '회의', 9,  TO_DATE('03/23/2019','MM/DD/YYYY'), TO_DATE('03/24/2019', 'MM/DD/YYYY'), '독립형', 80000, '세종특별자치시 도움1로 108 몰리브 7층','1000-2000-345675');
+INSERT INTO OFFICE VALUES ('O006', '회의', 10,  TO_DATE('03/25/2019','MM/DD/YYYY'), TO_DATE('03/30/2019', 'MM/DD/YYYY'), '개방형', 150000, '대전광역시 서구 문정로 85 ','1000-2000-345676');
+INSERT INTO OFFICE VALUES ('O007', '세미나', 32,  TO_DATE('04/01/2019','MM/DD/YYYY'), TO_DATE('04/05/2019', 'MM/DD/YYYY'), '개방형', 200000, '경기도 부천시 원미구 부일로 460','1000-2000-345677');
+INSERT INTO OFFICE VALUES ('O008', '회의', 17,  TO_DATE('04/07/2019','MM/DD/YYYY'), TO_DATE('04/14/2019', 'MM/DD/YYYY'), '독립형', 300000, '경기도 수원시 팔달구 덕영대로 924','1000-2000-345678');
+INSERT INTO OFFICE VALUES ('O009', '계약', 11,  TO_DATE('04/12/2019','MM/DD/YYYY'), TO_DATE('04/15/2019', 'MM/DD/YYYY'), '개방형', 200000, '광주광역시 서구 시청로 67','1000-2000-345679');
+INSERT INTO OFFICE VALUES ('O010', '회의', 20,  TO_DATE('04/17/2019','MM/DD/YYYY'), TO_DATE('04/26/2019', 'MM/DD/YYYY'), '독립형', 400000, '충청남도 천안시 동남구 만남로 43','1000-2000-345680');
+INSERT INTO OFFICE VALUES ('O011', '회의', 13,  TO_DATE('03/11/2019','MM/DD/YYYY'), TO_DATE('03/24/2019', 'MM/DD/YYYY'), '독립형', 300000, '충청북도 청주시 흥덕구2순환로 1233','1000-2000-345681');
+INSERT INTO OFFICE VALUES ('O012', '개발', 11,  TO_DATE('03/12/2019','MM/DD/YYYY'), TO_DATE('03/26/2019', 'MM/DD/YYYY'), '독립형', 600000, '대전광역시 동구 은어송로 72 ','1000-2000-345682');
+INSERT INTO OFFICE VALUES ('O013', '계약', 13,  TO_DATE('03/18/2019','MM/DD/YYYY'), TO_DATE('03/28/2019', 'MM/DD/YYYY'), '개방형', 300000, '인천광역시 남동구 예술로 198','1000-2000-345683');
+INSERT INTO OFFICE VALUES ('O014', '회의', 7,  TO_DATE('03/08/2019','MM/DD/YYYY'), TO_DATE('03/10/2019', 'MM/DD/YYYY'), '독립형', 100000, '인천광역시 계양구 장제로 738', '1000-2000-345684');
+INSERT INTO OFFICE VALUES ('O015', '회의', 9,  TO_DATE('03/23/2019','MM/DD/YYYY'), TO_DATE('03/24/2019', 'MM/DD/YYYY'), '독립형', 80000, '인천광역시 중구 공항로 272 ','1000-2000-345685');
+INSERT INTO OFFICE VALUES ('O016', '회의', 10,  TO_DATE('03/25/2019','MM/DD/YYYY'), TO_DATE('03/30/2019', 'MM/DD/YYYY'), '개방형', 150000, '대전광역시 서구 문정로 85 ','1000-2000-345686');
+INSERT INTO OFFICE VALUES ('O017', '세미나', 32,  TO_DATE('04/01/2019','MM/DD/YYYY'), TO_DATE('04/05/2019', 'MM/DD/YYYY'), '개방형', 200000, '강원도 강릉시 경강로 2120','1000-2000-345687');
+INSERT INTO OFFICE VALUES ('O018', '회의', 17,  TO_DATE('04/07/2019','MM/DD/YYYY'), TO_DATE('04/14/2019', 'MM/DD/YYYY'), '독립형', 300000, '강원도 춘천시 지석로 80','1000-2000-345688');
+INSERT INTO OFFICE VALUES ('O019', '계약', 11,  TO_DATE('04/12/2019','MM/DD/YYYY'), TO_DATE('04/15/2019', 'MM/DD/YYYY'), '개방형', 200000, '전라남도 목포시 교육로 63','1000-2000-345689');
+INSERT INTO OFFICE VALUES ('O020', '회의', 20,  TO_DATE('04/17/2019','MM/DD/YYYY'), TO_DATE('04/26/2019', 'MM/DD/YYYY'), '독립형', 400000, '부산광역시 부산진구 동천로 4','1000-2000-345690');

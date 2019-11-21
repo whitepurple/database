@@ -1,0 +1,10 @@
+create table cooperation(
+startup1_id 	varchar2(20),
+startup2_id 	varchar2(20),
+start_date 	date,
+end_date 	date,
+constraint cooperation_PK primary key(startup1_id, startup2_id),
+constraint startup1_id_FK foreign key(startup1_id)
+	references startup_mem(startup_id),
+constraint startup2_id_FK foreign key(startup2_id)
+	references startup_mem(startup_id));

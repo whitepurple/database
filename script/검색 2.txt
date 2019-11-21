@@ -1,0 +1,25 @@
+--그룹함수
+--상품, 후원, 스타트업 기업, 투자하다 -join
+--ssss0001 스타트업 기업이 등록한 후원 정보의 상품별
+--상품이름, 인원수, 상품별투자금액, 남은재고  -출력
+
+--현재 투자가 진행된 상품 판매 총액 랭킹
+--
+--
+ttitle  	'투자된 상품 판매액 리스트'
+
+select	m.name "기업명", 
+	p.name "상품명",
+	p.prod_id,
+	(p.price*sum(i.invest_num)) "총액",
+	sum(i.invest_num) "판매량",
+	count(distinct i.indi_id) "인원"
+
+from 	product p, sponsor_info s, startup_mem m, invest i
+
+where	s.startup_id = m.startup_id
+	and p.spon_id = s.spon_id
+	and i.prod_id = p.prod_id
+group by m.name,p.name,p.price,p.prod_id
+having 	p.price > 10
+order by 	"총액" desc

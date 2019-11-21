@@ -1,0 +1,48 @@
+create table product (
+prod_id 	char(10),
+stock 		number(4) not null,
+name 		varchar2(20) not null,
+price 		number(7),
+spon_id 	char(10),
+startup_id 	varchar2(20) not null,
+constraint product_PK primary key(prod_id),
+constraint spon_id_FK foreign key(spon_id)
+		references sponsor_info(spon_id),
+constraint p_startup_id_FK foreign key(startup_id)
+		references startup_mem(startup_id));
+commit;
+
+insert into product values ('190501P001', '200', '핸드폰공중부양기', '4000', '190501S001', 'ssss0001');
+insert into product values ('190502P001', '1000', '홍루이젠', '7300', '190501S001', 'ssss0001');
+insert into product values ('190503P001', '100', '콜라분별기', '14000', '190501S001', 'ssss0001');
+insert into product values ('190504P001', '50', '3D프린팅', '2100', '190502S001', 'ssss0001');
+insert into product values ('190505P001', '500', 'LongRun', '80000', '190502S001', 'ssss0001');
+insert into product values ('190506P001', '250', 'eyeLook', '45000', '190503S001', 'ssss0002');
+insert into product values ('190507P001', '170', 'appleapple', '9000', '190503S001', 'ssss0002');
+insert into product values ('190508P001', '220', 'banananana', '7000', '190503S001', 'ssss0002');
+insert into product values ('190509P001', '650', 'pearpipi', '3000', '190503S001', 'ssss0002');
+insert into product values ('190510P001', '400', 'bubblebubble', '14000', '190504S001', 'ssss0001');
+insert into product values ('190511P001', '820', 'rightleft', '25000', '190504S001', 'ssss0001');
+insert into product values ('190512P001', '250', '한글한글', '15000', '190505S001', 'ssss0002');
+insert into product values ('190513P001', '5000', '맞춤형등때밀이', '16000', '190506S001', 'ssss0003');
+insert into product values ('190514P001', '910', 'nutsheller', '41000', '190506S001', 'ssss0003');
+insert into product values ('190515P001', '370', '기분이좋은시계', '4200', '190507S001', 'ssss0004');
+insert into product values ('190516P001', '2100', '정신차리는껌', '500', '190508S001', 'ssss0005');
+insert into product values ('190517P001', '3100', '계속마시고싶은물', '1000', '190508S001', 'ssss0005');
+insert into product values ('190518P001', '3400', '음이온제거기', '244000', '190509S001', 'ssss0006');
+insert into product values ('190519P001', '550', '블루워터', '2000', '190510S001', 'ssss0007');
+insert into product values ('190520P001', '440', '미세먼지배출음료', '3000', '190511S001', 'ssss0008');
+insert into product values ('190521P001', '510', '수소수생성기', '17000', '190512S001', 'ssss0009');
+insert into product values ('190522P001', '830', '퓨어워터', '4000', '190513S001', 'ssss0010');
+insert into product values ('190523P001', '220', '황토찜질티셔츠', '54400', '190514S001', 'ssss0011');
+insert into product values ('190524P001', '650', '혈액순환팔찌', '1900', '190515S001', 'ssss0012');
+insert into product values ('190525P001', '720', 'look outside', '92100', '190516S001', 'ssss0013');
+insert into product values ('190526P001', '520', '장착형 숫가락', '25000', '190517S001', 'ssss0014');
+insert into product values ('190527P001', '730', '정신머리부착기', '23000', '190518S001', 'ssss0015');
+insert into product values ('190528P001', '800', '쿠크멘탈회복기', '71000', '190519S001', 'ssss0016');
+insert into product values ('190529P001', '820', '대신코딩해주는기계', '100000', '190520S001', 'ssss0017');
+insert into product values ('190530P001', '640', '블루레이필터', '8200', '190521S001', 'ssss0018');
+insert into product values ('190531P001', '820', '천일김부각', '5000', '190522S001', 'ssss0019');
+insert into product values ('190601P001', '640', '오골계깃펜', '18200', '190523S001', 'ssss0020');
+
+commit;

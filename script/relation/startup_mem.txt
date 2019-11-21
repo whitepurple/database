@@ -1,0 +1,57 @@
+create table startup_mem (
+startup_id 	varchar2(20),
+pw 		varchar2(20),
+name 		varchar2(15) unique,
+ceo 		varchar2(20),
+type 		varchar2(20),
+staff_num 	number(4),
+address 	varchar2(100),
+email 		varchar2(40),
+establish_date 	date,
+url 		varchar2(30),
+constraint startup_id_PK primary key(startup_id));
+
+commit;
+
+insert into startup_mem values ('ssss0001', '1234qwer', '하경출판', '김하경', '서적출판업', '3',
+	'전라남도 보성군 벌교읍 벌교리 602-2', 'abcd3538@hkpress.com', TO_DATE('01/10/2018','MM/DD/YYYY'), 'hkpress.com');
+insert into startup_mem values ('ssss0002', '1234qwer', '지은출판', '임지은', '서적출판업', '3',
+	'충청남도 천안시 서북구 불당동 234-1', 'b8162@jepress.com', TO_DATE('02/10/2018','MM/DD/YYYY'), 'jepress.com');
+insert into startup_mem values ('ssss0003', '1234qwer', '기백일보', '김기백', '신문발행업', '3',
+	'대구광역시 중구 동인동1가 2-1', 'kgb222@gbpress.com', TO_DATE('03/10/2018','MM/DD/YYYY'), 'gbpress.com');
+insert into startup_mem values ('ssss0004', '1234qwer', '미진일간', '조미진', '신문발행업', '3',
+	'충청남도 천안시 동남구 청당동 549', 'jmj1234@mjpress.com', TO_DATE('04/10/2018','MM/DD/YYYY'), 'mjpress.com');
+insert into startup_mem values ('ssss0005', '1234qwer', '실연', '김실연', '소프트웨어 개발업', '3',
+	'서울특별시 영등포구 여의도동 60', '1asd123@sykorea.com', TO_DATE('05/10/2018','MM/DD/YYYY'), 'sykorea.com');
+insert into startup_mem values ('ssss0006', '1234qwer', '행복', '김행복', '소프트웨어 개발업', '3',
+	'광주광역시 서구 쌍촌동 1302', '2asd123@hbkorea.com', TO_DATE('06/10/2018','MM/DD/YYYY'), 'hbkorea.com');
+insert into startup_mem values ('ssss0007', '1234qwer', '도겸', '김도겸', '녹음시설 운영업', '3',
+	'부산광역시 강서구 대저2동 2350', '3asd123@dkkorea.com', TO_DATE('07/10/2018','MM/DD/YYYY'), 'dkkorea.com');
+insert into startup_mem values ('ssss0008', '1234qwer', '이해피', '이행복', '녹음시설 운영업', '3',
+	'부산광역시 부산진구 새싹로 295', '4asd123@yhbkorea.com', TO_DATE('08/10/2018','MM/DD/YYYY'), 'yhbkorea.com');
+insert into startup_mem values ('ssss0009', '1234qwer', '기억추억', '이추억', '우편업', '3',
+	'대전광역시 동구 동서대로 1689', '5asd123@kckorea.com', TO_DATE('09/10/2018','MM/DD/YYYY'), 'kckorea.com');
+insert into startup_mem values ('ssss0010', '1234qwer', '베리해피', '이신남', '우편업', '3',
+	'충청남도 당진시 무수동7길 144', '6asd123@vhkorea.com', TO_DATE('10/10/2018','MM/DD/YYYY'), 'vhkorea.com');
+insert into startup_mem values ('ssss0011', '1234qwer', '정해피', '정신남', '위성통신', '3',
+	'전라북도 전주시 덕진구 전주천동로 470', '7asd123@jhkorea.com', TO_DATE('11/10/2018','MM/DD/YYYY'), 'jhkorea.com');
+insert into startup_mem values ('ssss0012', '1234qwer', 'wowHappy', '오신남', '위성통신', '3',
+	'광주광역시 서구 무진대로 904', '8asd123@whkorea.com', TO_DATE('12/10/2018','MM/DD/YYYY'), 'whkorea.com');
+insert into startup_mem values ('ssss0013', '1234qwer', '첨성첨성', '하경주', '컴퓨터시설 관리업', '3',
+	'경상남도 합천군 합천읍 대야로 883', '9asd123@cskorea.com', TO_DATE('01/15/2018','MM/DD/YYYY'), 'cskorea.com');
+insert into startup_mem values ('ssss0014', '1234qwer', '송송하하', '송경하', '컴퓨터시설 관리업', '3',
+	'강원도 원주시 평원로 158', '0asd123@shkorea.com', TO_DATE('01/18/2018','MM/DD/YYYY'), 'shkorea.com');
+insert into startup_mem values ('ssss0015', '1234qwer', '개미갬갬', '김지연', '사진처리업', '3',
+	'인천광역시 남동구 남촌동 649', 'a1sd123@ggkorea.com', TO_DATE('01/14/2018','MM/DD/YYYY'), 'ggkorea.com');
+insert into startup_mem values ('ssss0016', '1234qwer', '배미뱀뱀', '김지훈', '사진처리업', '3',
+	'경기도 파주시 후곡로 19', 'a2sd123@bbkorea.com', TO_DATE('01/11/2018','MM/DD/YYYY'), 'bbkorea.com');
+insert into startup_mem values ('ssss0017', '1234qwer', '쾌남', '김쾌남', '박물관 운영업', '3',
+	'강원도 속초시 동해대로 3988', 'as3d123@knkorea.com', TO_DATE('01/14/2018','MM/DD/YYYY'), 'knkorea.com');
+insert into startup_mem values ('ssss0018', '1234qwer', '수영수경', '김수경', '박물관 운영업', '3',
+	'강원도 삼척시 봉황로 101', 'as4d123@swkorea.com', TO_DATE('01/14/2018','MM/DD/YYYY'), 'swkorea.com');
+insert into startup_mem values ('ssss0019', '1234qwer', '하도상', '하도수', '광학기기 제조업', '3',
+	'충청남도 천안시 동남구 대흥로 239', 'a5sd123@hdkorea.com', TO_DATE('01/14/2018','MM/DD/YYYY'), 'hdkorea.com');
+insert into startup_mem values ('ssss0020', '1234qwer', 'Looker', '송신기', '광학기기 제조업', '3',
+	'충청남도 홍성군 홍북읍 충남대로 21', 'a7sd123@ssskorea.com', TO_DATE('01/14/2018','MM/DD/YYYY'), 'ssskorea.com');
+
+commit;
